@@ -7,12 +7,13 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "sql5.freesqldatabase.com",
-  user: "sql5746692",
-  password: "MNUwsGNPEL",
-  database: "sql5746692",
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_DATABASE,
   port: 3306,
 });
+console.log(process.env.DB_HOST);
 
 db.connect((err) => {
   if (err) {
