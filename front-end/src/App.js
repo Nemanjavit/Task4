@@ -3,11 +3,7 @@ import "./App.css";
 import SignUp from "./pages/SignUp";
 
 function App() {
-  return (
-    <Routes>
-      <Route path="/" element={<SignUp />} />
-    </Routes>
-  );
+  return <SignUp />;
 }
 
 export default App;

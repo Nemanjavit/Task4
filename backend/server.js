@@ -7,10 +7,10 @@ app.use(cors());
 app.use(express.json());
 
 const db = mysql.createConnection({
-  host: "localhost",
-  user: "root",
-  password: "Zujosaurus90",
-  database: "db2",
+  host: "sql5.freesqldatabase.com",
+  user: "sql5746692",
+  password: "MNUwsGNPEL",
+  database: "sql5746692",
   port: 3306,
 });
 
@@ -43,7 +43,8 @@ app.get("/users", (req, res) => {
     }
   });
 });
+const PORT = process.env.PORT || 5000;
 
-app.listen(5000, () => {
+app.listen(PORT, () => {
   console.log("listening");
 });

@@ -30,7 +30,7 @@ const SignUp = () => {
       <h1>users list</h1>
       <ul>
         {users.map((user) => {
-          return <li key={user.userId}>{user.email}</li>;
+          return <li key={user.id}>{user.email}</li>;
         })}
       </ul>
       <form autoComplete="off" onSubmit={handleSubmit}>
